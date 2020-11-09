@@ -89,7 +89,7 @@ void Average(float sum, int* arr, int length)//Метод нахождения среднего арифмет
 	{
 		sum += arr[i];
 	}
-	sum /= length;
+	sum /= length + 1;//length + 1 - количество элементов массива
 	cout << sum << "\n";
 }
 
