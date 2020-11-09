@@ -34,13 +34,13 @@ void dynArray()
 	piArray = new int[iLength];
 
 	cout << "Enter array elements: ";
-	for (int i = 0; i < iLength; i++)//Заполнение массива максимальной длины iLength;
+	for (size_t i = 0; i < iLength; i++)//Заполнение массива максимальной длины iLength;
 	{								 //Заполнение массива максимальной длины iLength;
 		cin >> *(piArray + i);		 //Заполнение массива максимальной длины iLength;
 		if (piArray[i] == 0)
 		{
 			piArray1 = new int[iflag];		     //iflag = i
-			for (int i = 0; i <= iflag; i++)     //Заполнение массива, включающего iflag элементов
+			for (size_t i = 0; i <= iflag; i++)     //Заполнение массива, включающего iflag элементов
 			{								     //Заполнение массива, включающего iflag элементов
 				*(piArray1 + i) = *(piArray + i);//Заполнение массива, включающего iflag элементов
 			}								     //Заполнение массива, включающего iflag элементов
@@ -60,14 +60,14 @@ void dynArray()
 		{
 			iLength *= 2;
 			piArray1 = new int[iLength];
-			for (int i = 0; i <= iflag; i++)
+			for (size_t i = 0; i <= iflag; i++)
 			{
 				*(piArray1 + i) = *(piArray + i);
 			}
 			delete[] piArray;
 
 			piArray = new int[iLength];
-			for (int i = 0; i <= iflag; i++)
+			for (size_t i = 0; i <= iflag; i++)
 			{
 				*(piArray + i) = *(piArray1 + i);
 			}
@@ -79,7 +79,6 @@ void dynArray()
 int main()
 {
 	dynArray();
-
 	return 0;
 }
 
@@ -110,7 +109,7 @@ void Odd(int* arr, int length)//Метод определения, вывода нечетных чисел в число
 void Inverse(int* arr, int length)//Метод вывода числовой последовательности в обратном порядке (п. 6.3)
 {
 	cout << "INVERSE: ";
-	for (int i = length; i >= 0; i--)
+	for (int i = length; i >= 0; i--)//int вместо size_t, чтобы избежать переполнения
 	{
 		cout << arr[i] << " ";
 	}
