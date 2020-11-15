@@ -15,3 +15,12 @@ task3_dynMemory/Release/task3_dynMemory.Build.CppClean.log
 task3_dynMemory/Release/task3_dynMemory.log
 task3_dynMemory/Release/task3_dynMemory.vcxproj.FileListAbsolute.txt
 task3_dynMemory/Release/task3_dynMemory.exe.recipe
+.vs/task3_dynMemory/v16/ipch/AutoPCH/3433e5cb60f83187/SOURCE.ipch
+.vs/task3_dynMemory/v16/ipch/AutoPCH/6c4a95f28aa8d065/SOURCE.ipch
+task3_dynMemory/x64/Debug/task3_dynMemory.Build.CppClean.log
+task3_dynMemory/x64/Debug/task3_dynMemory.exe.recipe
+task3_dynMemory/x64/Debug/task3_dynMemory.log
+task3_dynMemory/x64/Debug/task3_dynMemory.vcxproj.FileListAbsolute.txt
+task3_dynMemory/x64/Release/task3_dynMemory.Build.CppClean.log
+task3_dynMemory/x64/Release/task3_dynMemory.log
+task3_dynMemory/x64/Release/task3_dynMemory.vcxproj.FileListAbsolute.txt
