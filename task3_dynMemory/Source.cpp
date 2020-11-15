@@ -51,7 +51,7 @@ void dynArray()
 			Odd(piArray1, iflag);
 			Inverse(piArray1, iflag);
 
-			delete[] piArray1;//ньхайю опх сдюкемхх!!!ньхайю опх сдюкемхх!!!ньхайю опх сдюкемхх!!!
+			delete[] piArray1;
 
 			break;
 		}
